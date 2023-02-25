@@ -1,4 +1,5 @@
 EXPECTED_MINUTES_IN_OVEN=40
+CONSTANT_TWO=2
 
 class Lasanga 
 
@@ -11,7 +12,7 @@ class Lasanga
 	end
 
 	def preparation_time_in_minutes(layer)
-	  totallayer=layer * 2
+	  totallayer=layer * CONSTANT_TWO
 	  puts "Layer #{totallayer}"
 	  return totallayer
 	end
