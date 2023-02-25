@@ -1,10 +1,11 @@
 EXPECTED_MINUTES_IN_OVEN=40
 
 class Lasanga 
+
 	puts "expected minutes is #{EXPECTED_MINUTES_IN_OVEN}"
  
-	def remaining_minutes_in_oven(t)
-	  result=EXPECTED_MINUTES_IN_OVEN-t
+	def remaining_minutes_in_oven(time)
+	  result=EXPECTED_MINUTES_IN_OVEN-time
 	  puts "remaining #{result}"
 	  return result
 	end
@@ -14,12 +15,10 @@ class Lasanga
 	  puts "Layer #{totallayer}"
 	  return totallayer
 	end
-
-
-	def total_time_in_minutes (time,layer)
-	  final_time = remaining_minutes_in_oven(time) + preparation_time_in_minutes(layer)
-	  print"Total Time:  #{final_time}"
-	end
+	
+       def total_time_in_minutes (time,layer)
+	  puts"Total Time:#{ final_time = remaining_minutes_in_oven(time) + preparation_time_in_minutes(layer)}"
+       end	
 end
 
 lasanga_obj=Lasanga.new
